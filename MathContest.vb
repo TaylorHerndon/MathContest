@@ -5,7 +5,7 @@ Option Explicit On
 'RCET0265
 'Spring 2021
 'Math Contest
-'
+'https://github.com/TaylorHerndon/MathContest
 
 Public Class MathContest
 
@@ -59,7 +59,7 @@ Public Class MathContest
             Case 2
                 ComputedResult = CInt(Number1.Text) * CInt(Number2.Text)
             Case 3
-                ComputedResult = CInt(Number1.Text) / CInt(Number2.Text)
+                ComputedResult = CInt(CInt(Number1.Text) / CInt(Number2.Text))
         End Select
 
         'Compare the computed result with the student's result and display the coresponding msg box
