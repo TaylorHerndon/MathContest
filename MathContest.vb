@@ -22,6 +22,7 @@ Public Class MathContest
 
             MsgBox("The follwing fields require attention:" & StoreMessage("", False))
             StoreMessage("", True)
+            NameTextBox.Focus()
             Exit Sub
 
         End If
