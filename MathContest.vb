@@ -145,7 +145,7 @@ Public Class MathContest
 
         'Increase the number of runs by one and edit the current results
         NumberOfRuns += 1
-        Results = NameTextBox.Text & " got " & CStr(TotalCorrect) & " out of " & CStr(NumberOfRuns) & vbNewLine & "For a total of " & CStr((TotalCorrect / NumberOfRuns) * 100) & "%"
+        Results = NameTextBox.Text & " got " & CStr(TotalCorrect) & " out of " & CStr(NumberOfRuns) & vbNewLine & "For a total of " & CStr(CInt(TotalCorrect / NumberOfRuns * 100)) & "%"
 
         Return Results
 

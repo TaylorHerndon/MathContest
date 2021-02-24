@@ -22,6 +22,7 @@ Partial Class MathContest
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ButtonExit = New System.Windows.Forms.Button()
@@ -46,6 +47,7 @@ Partial Class MathContest
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.NameTextBox = New System.Windows.Forms.TextBox()
+        Me.GeneralToolTips = New System.Windows.Forms.ToolTip(Me.components)
         Me.Panel1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -84,36 +86,43 @@ Partial Class MathContest
         Me.ButtonExit.Size = New System.Drawing.Size(190, 77)
         Me.ButtonExit.TabIndex = 14
         Me.ButtonExit.Text = "Exit"
+        Me.GeneralToolTips.SetToolTip(Me.ButtonExit, "Click here to exit the program")
         Me.ButtonExit.UseVisualStyleBackColor = True
         '
         'ButtonSummary
         '
+        Me.ButtonSummary.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ButtonSummary.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonSummary.Location = New System.Drawing.Point(527, 247)
         Me.ButtonSummary.Name = "ButtonSummary"
         Me.ButtonSummary.Size = New System.Drawing.Size(190, 77)
         Me.ButtonSummary.TabIndex = 13
         Me.ButtonSummary.Text = "Summary"
+        Me.GeneralToolTips.SetToolTip(Me.ButtonSummary, "Click here to view your results")
         Me.ButtonSummary.UseVisualStyleBackColor = True
         '
         'ButtonClear
         '
+        Me.ButtonClear.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ButtonClear.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonClear.Location = New System.Drawing.Point(527, 142)
         Me.ButtonClear.Name = "ButtonClear"
         Me.ButtonClear.Size = New System.Drawing.Size(190, 77)
         Me.ButtonClear.TabIndex = 12
         Me.ButtonClear.Text = "Clear"
+        Me.GeneralToolTips.SetToolTip(Me.ButtonClear, "Click here or press ESC to clear your information and score")
         Me.ButtonClear.UseVisualStyleBackColor = True
         '
         'ButtonSubmit
         '
+        Me.ButtonSubmit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ButtonSubmit.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonSubmit.Location = New System.Drawing.Point(527, 44)
         Me.ButtonSubmit.Name = "ButtonSubmit"
         Me.ButtonSubmit.Size = New System.Drawing.Size(190, 77)
         Me.ButtonSubmit.TabIndex = 11
         Me.ButtonSubmit.Text = "Submit"
+        Me.GeneralToolTips.SetToolTip(Me.ButtonSubmit, "Click here or press Enter to submit your information / answer")
         Me.ButtonSubmit.UseVisualStyleBackColor = True
         '
         'GroupBox3
@@ -221,6 +230,9 @@ Partial Class MathContest
         Me.StudentAnswerTextBox.Name = "StudentAnswerTextBox"
         Me.StudentAnswerTextBox.Size = New System.Drawing.Size(192, 30)
         Me.StudentAnswerTextBox.TabIndex = 6
+        Me.GeneralToolTips.SetToolTip(Me.StudentAnswerTextBox, "Type your answer here" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Preform the function shown on the right" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "with the two numb" &
+        "ers above." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Ex: 1st Number = 2" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "     2nd Number = 3" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "     Operation = Addition" &
+        "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "     Result = 2 + 3")
         '
         'Number2
         '
@@ -263,6 +275,8 @@ Partial Class MathContest
         Me.GradeListBox.Name = "GradeListBox"
         Me.GradeListBox.Size = New System.Drawing.Size(86, 29)
         Me.GradeListBox.TabIndex = 3
+        Me.GeneralToolTips.SetToolTip(Me.GradeListBox, "Select Grade" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If your grade is not listed here, you are not" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "eligiable to compete" &
+        ".")
         '
         'AgeListBox
         '
@@ -273,6 +287,7 @@ Partial Class MathContest
         Me.AgeListBox.Name = "AgeListBox"
         Me.AgeListBox.Size = New System.Drawing.Size(86, 29)
         Me.AgeListBox.TabIndex = 2
+        Me.GeneralToolTips.SetToolTip(Me.AgeListBox, "Select Age" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If your age is not listed here, you are not" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "eligable to compete.")
         '
         'Label3
         '
@@ -298,13 +313,20 @@ Partial Class MathContest
         Me.NameTextBox.Name = "NameTextBox"
         Me.NameTextBox.Size = New System.Drawing.Size(183, 30)
         Me.NameTextBox.TabIndex = 1
+        Me.GeneralToolTips.SetToolTip(Me.NameTextBox, "Enter Name")
+        '
+        'GeneralToolTips
+        '
+        Me.GeneralToolTips.AutoPopDelay = 4000
+        Me.GeneralToolTips.InitialDelay = 500
+        Me.GeneralToolTips.ReshowDelay = 100
         '
         'MathContest
         '
         Me.AcceptButton = Me.ButtonSubmit
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.CancelButton = Me.ButtonExit
+        Me.CancelButton = Me.ButtonClear
         Me.ClientSize = New System.Drawing.Size(770, 483)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "MathContest"
@@ -344,4 +366,5 @@ Partial Class MathContest
     Friend WithEvents ButtonSummary As Button
     Friend WithEvents ButtonClear As Button
     Friend WithEvents ButtonSubmit As Button
+    Friend WithEvents GeneralToolTips As ToolTip
 End Class
