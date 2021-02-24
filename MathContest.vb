@@ -63,6 +63,14 @@ Public Class MathContest
                 ComputedResult = CInt(CInt(Number1.Text) / CInt(Number2.Text))
         End Select
 
+        'If no answer is given messgage the user and exit the sub
+        If StudentAnswerTextBox.Text = "" Then
+
+            MsgBox("Please Enter an Answer")
+            Exit Sub
+
+        End If
+
         'Compare the computed result with the student's result and display the coresponding msg box
         If ComputedResult = CInt(StudentAnswerTextBox.Text) Then
 
@@ -77,8 +85,8 @@ Public Class MathContest
         End If
 
         'Set new numbers
-        Number1.Text = CStr(Math.Floor(VBMath.Rnd * 11))
-        Number2.Text = CStr(Math.Floor(VBMath.Rnd * 11))
+        Number1.Text = CStr(Math.Ceiling(VBMath.Rnd * 10))
+        Number2.Text = CStr(Math.Ceiling(VBMath.Rnd * 10))
 
         'Reset Student Answer
         StudentAnswerTextBox.Text = ""
