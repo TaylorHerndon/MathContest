@@ -85,7 +85,7 @@ Partial Class MathContest
         Me.ButtonExit.Name = "ButtonExit"
         Me.ButtonExit.Size = New System.Drawing.Size(190, 77)
         Me.ButtonExit.TabIndex = 14
-        Me.ButtonExit.Text = "Exit"
+        Me.ButtonExit.Text = "&Exit"
         Me.GeneralToolTips.SetToolTip(Me.ButtonExit, "Click here to exit the program")
         Me.ButtonExit.UseVisualStyleBackColor = True
         '
@@ -97,7 +97,7 @@ Partial Class MathContest
         Me.ButtonSummary.Name = "ButtonSummary"
         Me.ButtonSummary.Size = New System.Drawing.Size(190, 77)
         Me.ButtonSummary.TabIndex = 13
-        Me.ButtonSummary.Text = "Summary"
+        Me.ButtonSummary.Text = "Su&mmary"
         Me.GeneralToolTips.SetToolTip(Me.ButtonSummary, "Click here to view your results")
         Me.ButtonSummary.UseVisualStyleBackColor = True
         '
@@ -109,7 +109,7 @@ Partial Class MathContest
         Me.ButtonClear.Name = "ButtonClear"
         Me.ButtonClear.Size = New System.Drawing.Size(190, 77)
         Me.ButtonClear.TabIndex = 12
-        Me.ButtonClear.Text = "Clear"
+        Me.ButtonClear.Text = "&Clear"
         Me.GeneralToolTips.SetToolTip(Me.ButtonClear, "Click here or press ESC to clear your information and score")
         Me.ButtonClear.UseVisualStyleBackColor = True
         '
@@ -121,7 +121,7 @@ Partial Class MathContest
         Me.ButtonSubmit.Name = "ButtonSubmit"
         Me.ButtonSubmit.Size = New System.Drawing.Size(190, 77)
         Me.ButtonSubmit.TabIndex = 11
-        Me.ButtonSubmit.Text = "Submit"
+        Me.ButtonSubmit.Text = "&Submit"
         Me.GeneralToolTips.SetToolTip(Me.ButtonSubmit, "Click here or press Enter to submit your information / answer")
         Me.ButtonSubmit.UseVisualStyleBackColor = True
         '
@@ -146,7 +146,7 @@ Partial Class MathContest
         Me.RadioButtonDivision.Name = "RadioButtonDivision"
         Me.RadioButtonDivision.Size = New System.Drawing.Size(105, 29)
         Me.RadioButtonDivision.TabIndex = 10
-        Me.RadioButtonDivision.Text = "Division"
+        Me.RadioButtonDivision.Text = "&Division"
         Me.RadioButtonDivision.UseVisualStyleBackColor = True
         '
         'RadioButtonMultiplication
@@ -156,7 +156,7 @@ Partial Class MathContest
         Me.RadioButtonMultiplication.Name = "RadioButtonMultiplication"
         Me.RadioButtonMultiplication.Size = New System.Drawing.Size(149, 29)
         Me.RadioButtonMultiplication.TabIndex = 9
-        Me.RadioButtonMultiplication.Text = "Multiplication"
+        Me.RadioButtonMultiplication.Text = "&Multiplication"
         Me.RadioButtonMultiplication.UseVisualStyleBackColor = True
         '
         'RadioButtonSubtraction
@@ -166,7 +166,7 @@ Partial Class MathContest
         Me.RadioButtonSubtraction.Name = "RadioButtonSubtraction"
         Me.RadioButtonSubtraction.Size = New System.Drawing.Size(136, 29)
         Me.RadioButtonSubtraction.TabIndex = 8
-        Me.RadioButtonSubtraction.Text = "Subtraction"
+        Me.RadioButtonSubtraction.Text = "Su&btraction"
         Me.RadioButtonSubtraction.UseVisualStyleBackColor = True
         '
         'RadioButtonAddition
@@ -178,7 +178,7 @@ Partial Class MathContest
         Me.RadioButtonAddition.Size = New System.Drawing.Size(108, 29)
         Me.RadioButtonAddition.TabIndex = 7
         Me.RadioButtonAddition.TabStop = True
-        Me.RadioButtonAddition.Text = "Addition"
+        Me.RadioButtonAddition.Text = "&Addition"
         Me.RadioButtonAddition.UseVisualStyleBackColor = True
         '
         'GroupBox2
